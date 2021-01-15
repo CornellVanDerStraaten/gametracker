@@ -1,19 +1,20 @@
 <template>
   <div id="app">
-    {{msg}}
+    <Toplays v-bind:toplays="toplays"/>
   </div>
 </template>
 
 <script>
+import Toplays from "./components/Toplays";
 
 export default {
   name: 'App',
   components: {
-
+    Toplays
   },
   data() {
     return {
-      toplay: [
+      toplays: [
         {
           id: 1,
           title: "Super Mario Odyssey",
